@@ -16,7 +16,7 @@
     <style>
       :root {
         --primary-color: #8b1d53;
-        --secondary-color: #fae9ef;
+        --secondary-color: #F2E6E6;
       }
 
       body {
@@ -39,9 +39,8 @@
         border-color: var(--primary-color);
       }
       .btn-primary:hover {
-        background-color: white;
-        border-color: #85193c;
-        color: #85193c;
+        background-color: var(--primary-color);
+        border-color: var(--primary-color);
       }
       .btn-outline-dark {
         background-color: white;
@@ -49,9 +48,9 @@
         color: #85193c;
       }
       .btn-outline-dark:hover {
-        background-color: var(--primary-color);
-        border-color: var(--primary-color);
-        color: white;
+        background-color: white;
+        border-color: #85193c;
+        color: #85193c;
       }
 
       .section-title {
@@ -69,7 +68,7 @@
 
       .card {
         border: none;
-        background-color: var(--secondary-color);
+        /* background-color: var(--secondary-color); */
       }
 
       .testimonial {
@@ -103,9 +102,9 @@
         color: #4a102a;
         margin-bottom: 22px;
       }
-      .li-hgt {
+      /* .li-hgt {
         line-height: 40px;
-      }
+      } */
       .icon-circle {
         width: 40px;
         height: 40px;
@@ -114,6 +113,16 @@
         align-items: center;
         border-radius: 50%;
         background-color: #c5172e;
+        margin: 7px;
+      }
+       .icon-circles {
+        width: 40px;
+        height: 40px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        /* background-color: #c5172e; */
       }
       .back-cads {
         background: linear-gradient(to right, #1f060e, #85193c);
@@ -137,13 +146,14 @@
       .highlight{
         color: #c5172e;
       }
+   
     </style>
   </head>
 
   <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
-      <div class="container">
+      <div class="container  justify-content-between">
         <a class="navbar-brand" href="#"
           ><img src="./logo.jpg" alt="Hero Illustration" class="illustrations"
         /></a>
@@ -160,14 +170,17 @@
             <li class="nav-item">
               <a class="nav-link active" href="#">Home</a>
             </li>
+             <li class="nav-item">
+              <a class="nav-link active" href="#about">About us</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="#services">Our Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#why-us">Why Us</a>
+              <a class="nav-link active" href="#">FAQ</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#testimonials">Testimonials</a>
+              <a class="nav-link" href="#why-us">Why Choose Us</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
@@ -181,7 +194,7 @@
     <section class="hero">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-md-6">
+          <div class="col-md-6 text-start">
             <h1>
               SEO for Roofing Contractors Get <span>Found</span>. Get
               <span class="highlight">Leads</span> Get <span>Growing</span>
@@ -193,24 +206,52 @@
               leads, and dominate the local roofing market
             </p>
 
-            <a href="#contact" class="btn btn-primary m-2"
-              >Free Site Audit for Roofers<i class="fa-solid fa-arrow-right"></i
+            <a href="#contact" class="btn btn-primary m-2 px-2"
+              >Free Site Audit for Roofers<i class="fa-solid fa-arrow-right px-2"></i
             ></a>
             <a href="#" class="btn btn-outline-dark m-2"
-              ><i class="fa-solid fa-comment" style="color: #85193c"></i>Contact
+              ><i class="fa-solid fa-comment px-2" style="color: #85193c"></i>Contact
               Us</a
             >
+            <div class="mt-4">
+            <img
+              src="./mol2-.png"
+              alt=""
+              class="rounded mx-auto d-block"  style="height: 20px; width: 20px;"
+            />
+            </div>
           </div>
           <div class="col-md-6">
+            
             <img
               src="./hero-1.png"
               alt="Hero Illustration"
               class="illustration"
             />
+            <div>
+               <img
+              src="./molicular.png"
+              alt=""
+              class="rounded float-start"  style="height: 20px; width: 20px;"
+            />
+             <img
+              src="./sound-2.png"
+              alt=""
+              class=""  style="height: 80px; width: 80px;"
+            />
+            </div>
           </div>
         </div>
       </div>
     </section>
+    <div class="wave-container">
+  <!-- <svg viewBox="0 0 1440 100" preserveAspectRatio="none" style="display: block; width: 100%; height: 100px;">
+    <path d="M 0,100 C 150,200 350,0 500,100 L 500,00 L 0,0" fill="#F2E6E6"></path>
+  </svg> -->
+   <!-- <svg viewBox="0 0 500 200">
+  <path d="M 0,100 C 150,200 350,0 500,100 L 500,00 L 0,0"></path>
+</svg> -->
+</div>
 
     <!-- Lead Struggle Section -->
     <section class="py-5 bg-light">
@@ -218,6 +259,7 @@
         <div class="row align-items-center">
           <div class="col-md-6">
             <img src="./girl.jpg" alt="Struggling" class="illustration" />
+             <img src="./circle.jpg" alt="Struggling" class= "rounded float-end" style="height: 40px; width: 40px;" />
           </div>
           <div class="col-md-6 li-hgt">
             <a href="#" class="btn btn-outline-get px-2 py-2"
@@ -300,9 +342,9 @@
                 near me."
               </p>
               <hr />
-              <div class="">
-                <i class="fa-solid fa-location-dot px-2"></i>
-                <a>Read More</a>
+              <div class="highlight">
+                <i class="fa-solid fa-location-dot px-2 text-start"></i>
+                <p class="text-end">READ MORE</p>
               </div>
             </div>
           </div>
@@ -313,9 +355,9 @@
                 Optimize your website to rank for valuable roofing keywords.
               </p>
               <hr />
-              <div class="">
+              <div class="highlight">
                 <i class="fa-solid fa-code px-2"></i>
-                <a>Read More</a>
+               <p class="text-end">READ MORE</p>
               </div>
             </div>
           </div>
@@ -326,9 +368,9 @@
                 Stand out with reviews and maps to attract more roofing leads.
               </p>
               <hr />
-              <div class="">
+              <div class="highlight">
                 <i class="fa-solid fa-pager px-2"></i>
-                <a>Read More</a>
+               <p class="text-end">READ MORE</p>
               </div>
             </div>
           </div>
@@ -339,9 +381,9 @@
                 Gain credibility and visibility by building authority backlinks.
               </p>
               <hr />
-              <div class="">
+              <div class="highlight">
                 <i class="fa-solid fa-link px-2"></i>
-                <a>Read More</a>
+                <p class="text-end">READ MORE</p>
               </div>
             </div>
           </div>
@@ -354,6 +396,13 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-6 order-md-2">
+            <div>
+               <img
+              src="./arrow.png"
+              alt=""
+              class=""  style="height: 80px; width: 80px;"
+            />
+            </div>
             <img src="./man.jpg" alt="Why Us" class="illustration" />
           </div>
           <div class="col-md-6 order-md-1">
@@ -368,7 +417,7 @@
             </p>
             <ul class="list-unstyled section-titl">
               <li class="mb-3 c-ds">
-                <p>
+                <p class="pb-4">
                   <i
                     class="fa-solid fa-check icon-circle"
                     style="color: white"
@@ -380,7 +429,7 @@
               <li class="mb-3 c-ds">
                 <p>
                   <i
-                    class="fa-solid fa-check icon-circle"
+                    class="fa-solid fa-check icon-circle px-2"
                     style="color: white"
                   ></i>
                   Local Dominance: We master Google’s map listings, so when
@@ -388,7 +437,7 @@
                 </p>
               </li>
               <li class="mb-3 c-ds">
-                <p>
+                <p class="pb-4">
                   <i
                     class="fa-solid fa-check icon-circle"
                     style="color: white"
@@ -424,8 +473,8 @@
           <div class="col-md-4">
             <div class="card bg-white text-dark p-3">
               <i
-                class="fa-solid fa-quote-left icon-circle"
-                style="color: white"
+                class="fa-solid fa-quote-left icon-circles"
+                style="color: #85193c"
               ></i>
               <p>
                 We’ve worked with other marketing companies before, but no one
@@ -434,21 +483,22 @@
                 Google—and fast. We’re getting more qualified leads every week,
                 and we’ve finally stopped wasting money on ads that don’t work.”
               </p>
-              <strong>– Sarah M., Storm Shield Roofing</strong>
+              <strong>– Sarah M., Storm Shield Roofing <img src="./google-logo.png" alt="Struggling" class= "rounded float-end" style="height: 35px; width: 35px;" /></strong>
+              
               <div class="star-rating text-warning mb-2">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
+               <i class="fas fa-star"></i>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="card bg-white text-dark p-3">
               <i
-                class="fa-solid fa-quote-left icon-circle"
-                style="color: white"
+                class="fa-solid fa-quote-left icon-circles"
+                style="color: #85193c"
               ></i>
               <p>
                 I was skeptical about SEO at first, but SEORoofer proved me
@@ -457,21 +507,21 @@
                 sales grew steadily. Their deep knowledge of SEO for roofers
                 made a huge difference.”
               </p>
-              <strong>– Tony D., D’Angelo Roofing Company</strong>
+              <strong>– Tony D., D’Angelo Roofing Company<img src="./google-logo.png" alt="Struggling" class= "rounded float-end" style="height: 35px; width: 35px;" /></strong>
               <div class="star-rating text-warning mb-2">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
+               <i class="fas fa-star"></i>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="card bg-white text-dark p-3">
               <i
-                class="fa-solid fa-quote-left icon-circle"
-                style="color: white"
+                class="fa-solid fa-quote-left icon-circles"
+                style="color: #85193c"
               ></i>
               <p>
                 Before SEORoofer, we barely showed up in search results. Now,
@@ -480,13 +530,13 @@
                 cookie-cutter tactics. Everything was tailored to our market and
                 goals.”
               </p>
-              <strong>– Rebecca F., Apex Roofing Solutions</strong>
+              <strong>– Rebecca F., Apex Roofing Solutions<img src="./google-logo.png" alt="Struggling" class= "rounded float-end" style="height: 35px; width: 35px;" /></strong>
               <div class="star-rating text-warning mb-2">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
+               <i class="fas fa-star"></i>
               </div>
             </div>
           </div>
@@ -500,15 +550,15 @@
         <h2>Ready to Grow Your <span class="highlight">Roofing Business?</span></h2>
         <p class="section-title">
           Let’s get started with a Free Roofing SEO Audit, no strings attached.
-          We’ll show you exactly where your site stands and how to boost your
+          We’ll show you exactly<br> where your site stands and how to boost your
           leads.
         </p>
         <div>
-          <a href="#" class="btn btn-primary m-2"
-            >Claim My Free SEO Audit Now<i class="fa-solid fa-arrow-right"></i
+          <a href="#" class="btn btn-primary m-2 px-2"
+            >Claim My Free SEO Audit Now<i class="fa-solid fa-arrow-right px-2"></i
           ></a>
           <a href="#" class="btn btn-outline-dark m-2"
-            ><i class="fa-solid fa-comment" style="color: #85193c"></i>Contact
+            ><i class="fa-solid fa-comment px-2" style="color: #85193c"></i>Contact
             us</a
           >
         </div>
@@ -530,19 +580,20 @@
                 alt="Hero Illustration"
                 class="illustrations"
             /></a>
-            <p>Real Teams. Real Results. Zero Freelancer Headaches.</p>
+            <p class="mt-3">Real Teams. Real Results.<br>
+               Zero Freelancer Headaches.</p>
             <div>
               <a href="#" class="text-white me-4"
                 ><i class="fab fa-facebook-f"></i
               ></a>
               <a href="#" class="text-white me-4"
-                ><i class="fab fa-twitter"></i
-              ></a>
-              <a href="#" class="text-white me-4"
-                ><i class="fab fa-instagram"></i
-              ></a>
-              <a href="#" class="text-white me-4"
                 ><i class="fab fa-linkedin-in"></i
+              ></a>
+               <a href="#" class="text-white me-4"
+                ><i class="fab fa-youtube"></i
+              ></a>
+              <a href="#" class="text-white me-4"
+                ><i class="fab fa-twitter"></i
               ></a>
             </div>
           </div>
