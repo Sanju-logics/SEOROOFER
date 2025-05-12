@@ -55,7 +55,7 @@
 
       .section-title {
         color: var(--primary-color);
-        font-weight: bold;
+        /* font-weight: bold; */
       }
       .section-titles {
         color: white;
@@ -93,7 +93,7 @@
         height: auto;
       }
       img.illustrations {
-        max-width: 48%;
+        max-width: 42%;
         height: auto;
       }
       .btn-outline-get {
@@ -146,12 +146,15 @@
       .highlight{
         color: #c5172e;
       }
-   
+   .wave-container {
+  line-height: 0;
+  position: relative;
+  margin-top: -5px; 
+}
     </style>
   </head>
 
   <body>
-    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
       <div class="container  justify-content-between">
         <a class="navbar-brand" href="#"
@@ -171,13 +174,13 @@
               <a class="nav-link active" href="#">Home</a>
             </li>
              <li class="nav-item">
-              <a class="nav-link active" href="#about">About us</a>
+              <a class="nav-link" href="#about">About us</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#services">Our Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">FAQ</a>
+              <a class="nav-link" href="#">FAQ</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#why-us">Why Choose Us</a>
@@ -190,14 +193,14 @@
       </div>
     </nav>
 
-    <!-- Hero Section -->
+
     <section class="hero">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-6 text-start">
             <h1>
               SEO for Roofing Contractors Get <span>Found</span>. Get
-              <span class="highlight">Leads</span> Get <span>Growing</span>
+              <span class="highlight"> Leads</span> Get <span>Growing</span>
             </h1>
 
             <p class="fw-bold mt-1">
@@ -215,27 +218,27 @@
             >
             <div class="mt-4">
             <img
-              src="./mol2-.png"
+              src="./img/mol2-.png"
               alt=""
-              class="rounded mx-auto d-block"  style="height: 20px; width: 20px;"
+              class="rounded mx-auto d-block"  style="height: 15px; width: 15px;"
             />
             </div>
           </div>
           <div class="col-md-6">
             
             <img
-              src="./hero-1.png"
+              src="./img/hero-1.png"
               alt="Hero Illustration"
               class="illustration"
             />
             <div>
                <img
-              src="./molicular.png"
+              src="./img/molicular.png"
               alt=""
-              class="rounded float-start"  style="height: 20px; width: 20px;"
+              class="rounded float-start"  style="height: 15px; width: 15px;"
             />
              <img
-              src="./sound-2.png"
+              src="./img/sound-2.png"
               alt=""
               class=""  style="height: 80px; width: 80px;"
             />
@@ -245,21 +248,21 @@
       </div>
     </section>
     <div class="wave-container">
-  <!-- <svg viewBox="0 0 1440 100" preserveAspectRatio="none" style="display: block; width: 100%; height: 100px;">
-    <path d="M 0,100 C 150,200 350,0 500,100 L 500,00 L 0,0" fill="#F2E6E6"></path>
-  </svg> -->
-   <!-- <svg viewBox="0 0 500 200">
-  <path d="M 0,100 C 150,200 350,0 500,100 L 500,00 L 0,0"></path>
-</svg> -->
+  <svg viewBox="0 0 1440 100" preserveAspectRatio="none" style="display: block; width: 100%; height: 100px;">
+    <path d="M0,0 C360,100 1080,0 1440,100 L1440,0 L0,0 Z" fill="#F2E6E6"></path>
+  </svg>
 </div>
 
-    <!-- Lead Struggle Section -->
+<!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,128L26.7,122.7C53.3,117,107,107,160,138.7C213.3,171,267,245,320,261.3C373.3,277,427,235,480,208C533.3,181,587,171,640,186.7C693.3,203,747,245,800,234.7C853.3,224,907,160,960,149.3C1013.3,139,1067,181,1120,197.3C1173.3,213,1227,203,1280,202.7C1333.3,203,1387,213,1413,218.7L1440,224L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path></svg> -->
+
+
+   
     <section class="py-5 bg-light">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-6">
-            <img src="./girl.jpg" alt="Struggling" class="illustration" />
-             <img src="./circle.jpg" alt="Struggling" class= "rounded float-end" style="height: 40px; width: 40px;" />
+            <img src="./img/girl.jpg" alt="Struggling" class="illustration" />
+             <img src="./img/circle.jpg" alt="Struggling" class= "rounded float-end" style="height: 40px; width: 40px;" />
           </div>
           <div class="col-md-6 li-hgt">
             <a href="#" class="btn btn-outline-get px-2 py-2"
@@ -320,7 +323,7 @@
       </div>
     </section>
 
-    <!-- Services Section -->
+    
     <section id="services" class="py-5 back-cads">
       <div class="container">
         <div class="text-center">
@@ -391,19 +394,19 @@
       </div>
     </section>
 
-    <!-- Why Us Section -->
+ 
     <section id="why-us" class="py-5">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-6 order-md-2">
             <div>
                <img
-              src="./arrow.png"
+              src="./img/arrow.png"
               alt=""
               class=""  style="height: 80px; width: 80px;"
             />
             </div>
-            <img src="./man.jpg" alt="Why Us" class="illustration" />
+            <img src="./img/man.jpg" alt="Why Us" class="illustration" />
           </div>
           <div class="col-md-6 order-md-1">
             <a href="#" class="btn btn-outline-get px-2 py-2">Why Choose us</a>
@@ -462,7 +465,7 @@
       </div>
     </section>
 
-    <!-- Testimonials Section -->
+   
     <section id="testimonials" class="testimonial">
       <div class="container">
         <div class="text-center">
@@ -483,7 +486,7 @@
                 Google—and fast. We’re getting more qualified leads every week,
                 and we’ve finally stopped wasting money on ads that don’t work.”
               </p>
-              <strong>– Sarah M., Storm Shield Roofing <img src="./google-logo.png" alt="Struggling" class= "rounded float-end" style="height: 35px; width: 35px;" /></strong>
+              <strong>– Sarah M., Storm Shield Roofing <img src="./img/google-logo.png" alt="Struggling" class= "rounded float-end" style="height: 35px; width: 35px;" /></strong>
               
               <div class="star-rating text-warning mb-2">
                 <i class="fas fa-star"></i>
@@ -507,7 +510,7 @@
                 sales grew steadily. Their deep knowledge of SEO for roofers
                 made a huge difference.”
               </p>
-              <strong>– Tony D., D’Angelo Roofing Company<img src="./google-logo.png" alt="Struggling" class= "rounded float-end" style="height: 35px; width: 35px;" /></strong>
+              <strong>– Tony D., D’Angelo Roofing Company<img src="./img/google-logo.png" alt="Struggling" class= "rounded float-end" style="height: 35px; width: 35px;" /></strong>
               <div class="star-rating text-warning mb-2">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -530,7 +533,7 @@
                 cookie-cutter tactics. Everything was tailored to our market and
                 goals.”
               </p>
-              <strong>– Rebecca F., Apex Roofing Solutions<img src="./google-logo.png" alt="Struggling" class= "rounded float-end" style="height: 35px; width: 35px;" /></strong>
+              <strong>– Rebecca F., Apex Roofing Solutions<img src="./img/google-logo.png" alt="Struggling" class= "rounded float-end" style="height: 35px; width: 35px;" /></strong>
               <div class="star-rating text-warning mb-2">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -544,11 +547,11 @@
       </div>
     </section>
 
-    <!-- Contact Call-to-Action -->
+  
     <section id="contact" class="py-5 call-contct">
       <div class="container text-center">
         <h2>Ready to Grow Your <span class="highlight">Roofing Business?</span></h2>
-        <p class="section-title">
+        <p class="section-title fw-semibold">
           Let’s get started with a Free Roofing SEO Audit, no strings attached.
           We’ll show you exactly<br> where your site stands and how to boost your
           leads.
@@ -565,18 +568,18 @@
       </div>
     </section>
 
-    <!-- Footer -->
+    
     <footer
       class="text-white pt-5 pb-4"
       style="background: linear-gradient(to bottom, #1f060e, #85193c)"
     >
       <div class="container text-md-left">
         <div class="row text-md-left">
-          <!-- Company Info -->
+        
           <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mt-3">
             <a class="navbar-brand mb-4" href="#"
               ><img
-                src="./logo.jpg"
+                src="./img/logo.jpg"
                 alt="Hero Illustration"
                 class="illustrations"
             /></a>
@@ -598,7 +601,7 @@
             </div>
           </div>
 
-          <!-- Quick Links -->
+          
           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
             <h5 class="text-uppercase mb-4 font-weight-bold">Quick Links</h5>
             <p><a href="#" class="text-white text-decoration-none">Home</a></p>
@@ -627,7 +630,7 @@
             </p>
           </div>
 
-          <!-- Contact Info -->
+         
           <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
             <h5 class="text-uppercase mb-4 font-weight-bold">
               Services for Roofers
@@ -646,11 +649,11 @@
           </div>
         </div>
 
-        <!-- Copyright -->
+       
         <div class="row mt-4">
-          <div class="col-md-12 text-center">
+          <div class="col-md-12 text-start fw-semibold">
             <hr />
-            <p>&copy; 2025 SEO Roofer. All Rights Reserved.</p>
+            <p>&copy; 2025 Seoroofer. All Rights Reserved.</p>
           </div>
         </div>
       </div>
