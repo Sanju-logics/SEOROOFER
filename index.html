@@ -23,7 +23,11 @@
         font-family: "Segoe UI", sans-serif;
         background: fixed;
       }
-
+body,
+.hero {
+  margin: 0;
+  padding: 0;
+}
       .hero {
         background-color: var(--secondary-color);
         padding: 4rem 1rem;
@@ -166,6 +170,22 @@
   margin-top: -5px; 
   margin-bottom: 20px;
 }
+@media (min-width: 1400px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1378px !important;
+    }
+    .h-fon{
+        font-size: 53px !important;
+        margin-bottom: 25px !important;
+    }
+   .p-fon{
+    font-size: 24px !important;
+    margin-bottom: 25px !important;
+}
+.b-aud{
+    font-size: 20px;
+}
+}
 @media (max-width: 375px) {
 .na-to{
     margin-left: 287px;
@@ -224,22 +244,23 @@
     <section class="hero">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-md-6 text-start">
-            <h1>
-              SEO for Roofing Contractors<br> Get <span>Found</span>. Get
+          <div class="col-md-7 text-start">
+            <h1 class="h-fon">
+              SEO for Roofing Contractors Get <span>Found</span>. Get
               <span class="highlight"> Leads</span> Get <span>Growing</span>
             </h1>
+            <!-- <h1>SEO for Roofing Contractors Get Found. Get Leads Get Growing</h1> -->
 
-            <p class="fw-semibold mt-1">
+            <p class="fw-semibold mt-1 p-fon">
               Don’t let your competitors steal the spotlight. With our proven
               SEO for roofers, your business can rank higher, attract more
               leads, and dominate the local roofing market
             </p>
 
-            <a href="#contact" class="btn btn-primary m-2 px-2"
+            <a href="#contact" class="btn btn-primary m-2 px-2 b-aud"
               >Free Site Audit for Roofers<i class="fa-solid fa-arrow-right px-2"></i
             ></a>
-            <a href="#" class="btn btn-outline-dark m-2"
+            <a href="#" class="btn btn-outline-dark m-2 b-aud"
               ><i class="fa-solid fa-comment px-2" style="color: #85193c"></i>Contact
               Us</a
             >
@@ -251,7 +272,7 @@
             />
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-5">
             
             <img
               src="./hero-f.png"
@@ -275,433 +296,18 @@
       </div>
     </section>
     <div class="wave-container">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 100" width="100%">
+  <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 100" width="100%">
   <path d="M -151.04 50 Q -119.04 50 -87.04 75 Q -23.04 125 40.96 75 Q 72.96 50 104.96 50 Q 136.96 50 168.96 75 Q 232.96 125 296.96 75 Q 328.96 50 360.96 50 Q 392.96 50 424.96 75 Q 488.96 125 552.96 75 Q 584.96 50 616.96 50 Q 648.96 50 680.96 75 Q 744.96 125 808.96 75 Q 840.96 50 872.96 50 Q 904.96 50 936.96 75 Q 1000.96 125 1064.96 75 Q 1096.96 50 1128.96 50 Q 1160.96 50 1192.96 75 Q 1256.96 125 1320.96 75 Q 1352.96 50 1384.96 50 L 1280 0 L 0 0 Z" fill="#F2E6E6"></path>
-</svg>
-<!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 100" width="100%">
-  <path d="M -251.73333333333332 50 Q -198.4 50 -145.07 75 Q -38.4 125 68.27 75 Q 121.6 50 174.93 50 Q 228.27 50 281.6 75 Q 388.27 125 494.93 75 Q 548.27 50 601.6 50 Q 654.93 50 708.27 75 Q 814.93 125 921.6 75 Q 974.93 50 1028.27 50 Q 1081.6 50 1134.93 75 Q 1241.6 125 1348.27 75 Q 1401.6 50 1454.93 50 L 1280 0 L 0 0 Z" fill="#59afff"></path>
 </svg> -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 100" width="100%">
+  <path d="M -72.53333333333335 50 Q -19.2 50 34.13 75 Q 140.8 125 247.47 75 Q 300.8 50 354.13 50 Q 407.47 50 460.8 75 Q 567.47 125 674.13 75 Q 727.47 50 780.8 50 Q 834.13 50 887.47 75 Q 994.13 125 1100.8 75 Q 1154.13 50 1207.47 50 Q 1260.8 50 1314.13 75 Q 1420.8 125 1527.47 75 Q 1580.8 50 1634.13 50 L 1280 0 L 0 0 Z" fill="#F2E6E6"></path>
+</svg>
 </div>
 
 <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,128L26.7,122.7C53.3,117,107,107,160,138.7C213.3,171,267,245,320,261.3C373.3,277,427,235,480,208C533.3,181,587,171,640,186.7C693.3,203,747,245,800,234.7C853.3,224,907,160,960,149.3C1013.3,139,1067,181,1120,197.3C1173.3,213,1227,203,1280,202.7C1333.3,203,1387,213,1413,218.7L1440,224L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path></svg> -->
 
 
    
-    <section class="py-5 bg-white">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-6">
-             <div>
-               <img
-              src="./lotiicon.png"
-              alt=""
-              class="ml-3 rounded float-end"  style="height: 80px; width: 80px;"
-            />
-            </div>
-            <img src="./girl.jpg" alt="Struggling" class="illustration" />
-             <img src="./circle.jpg" alt="Struggling" class= "rounded float-end" style="height: 40px; width: 40px;" />
-          </div>
-          <div class="col-md-6 li-hgt">
-           
-            <a href="#" class="btn btn-outline-get px-2 py-2"
-              >We Understand You</a
-            >
-            <h2>
-              Struggling to Get <span class="highlight">Leads Online?</span> <br />
-              You’re Not Alone.
-            </h2>
-            <p class="section-titl">
-              You're a roofer, not a digital marketer. You’re out there climbing
-              roofs, managing crews, and quoting jobs. But when it comes to
-              getting found online? That’s where things get frustrating.
-            </p>
-
-            <div class="da-rk">
-              <p>
-                <i
-                  class="fa-solid fa-phone icon-circle"
-                  style="color: white"
-                ></i
-                >You’ve invested in a website, but it’s not bringing in calls.
-              </p>
-            </div>
-            <div class="da-rk">
-              <p>
-                <i
-                  class="fa-solid fa-thumbs-down icon-circle p-2"
-                  style="color: white"
-                ></i
-                >Your competitors show up in Google even the ones you know don’t
-                do quality work.
-              </p>
-            </div>
-            <div class="da-rk">
-              <p>
-                <i
-                  class="fa-solid fa-comment icon-circle p-2"
-                  style="color: white"
-                ></i
-                >You’re relying on word-of-mouth, but it’s just not enough
-                anymore.
-              </p>
-            </div>
-
-            <div class="da-rk">
-              <p>
-                <i
-                  class="fa-solid fa-fire icon-circle p-2"
-                  style="color: white"
-                ></i
-                >You’ve tried SEO before, but it felt like burning money without
-                results.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    
-    <section id="services" class="py-5 back-cads">
-      <div class="container">
-        <div class="text-center">
-          <a href="#" class="btn btn-outline-get px-2 py-2">Our Services</a>
-          <h2 class="section-titles mb-4">
-            Roofing SEO that Actually Grows Your Business
-          </h2>
-          <p class="section-titles">
-            With SEO Roofer’s proven methods, your roofing business won’t just
-            rank—it’ll dominate:
-          </p>
-        </div>
-        <div class="row g-4 py-5">
-          <div class="col-md-6 col-lg-2"></div>
-          <div class="col-md-6 col-lg-4">
-            <div class="card p-3 h-100">
-              <h5 class="py-3">Local SEO for Roofers</h5>
-              <p>
-                Ensure you appear prominently in local searches like roof repair
-                near me."
-              </p>
-              <hr />
-              <div class="highlight">
-                <i class="fa-solid fa-location-dot px-2 text-start" style="font-size: 40px;"></i>
-                <p class="text-end re-mar">READ MORE</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="card p-3 h-100">
-              <h5 class="py-3">On-Page SEO for Roofing</h5>
-              <p>
-                Optimize your website to rank for valuable roofing keywords.
-              </p>
-              <hr />
-              <div class="highlight">
-                <i class="fa-solid fa-code px-2" style="font-size: 40px;"></i>
-               <p class="text-end re-mar">READ MORE</p>
-              </div>
-            </div>
-          </div>
-        
-         
-        </div>
-        <div class="row g-4 py-5">
-         <div class="col-md-6 col-lg-2"></div>
-          <div class="col-md-6 col-lg-4">
-            <div class="card p-3 h-100">
-              <h5 class="py-3">Google Business Profile Optimization</h5>
-              <p>
-                Stand out with reviews and maps to attract more roofing leads.
-              </p>
-              <hr />
-              <div class="highlight">
-                <i class="fa-solid fa-pager px-2" style="font-size: 40px;"></i>
-               <p class="text-end re-mar">READ MORE</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="card p-3 h-100">
-              <h5 class="py-3">Roofing SEO Link Building</h5>
-              <p>
-                Gain credibility and visibility by building authority backlinks.
-              </p>
-              <hr />
-              <div class="highlight">
-                <i class="fa-solid fa-link px-2" style="font-size: 40px;"></i>
-                <p class="text-end re-mar">READ MORE</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
- 
-    <section id="why-us" class="py-5">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-6 order-md-2">
-            <div>
-               <img
-              src="./arrow.png"
-              alt=""
-              class=""  style="height: 80px; width: 80px;"
-            />
-            </div>
-            <img src="./man.jpg" alt="Why Us" class="illustration" />
-          </div>
-          <div class="col-md-6 order-md-1">
-            <a href="#" class="btn btn-outline-get px-2 py-2">Why Choose us</a>
-            <h3 class="">
-              Finally, an SEO Company Built Only for<br> Roofers
-            </h3>
-            <p class="section-titl">
-              Forget generic SEO firms. SEORoofer understands exactly what
-              roofers need because SEO for roofing is all we do. You deserve an
-              SEO partner who truly understands roofing. That’s SEO Roofer.
-            </p>
-            <ul class="list-unstyled section-titl">
-              <li class="mb-3 c-ds">
-                <p class="pb-4">
-                  <i
-                    class="fa-solid fa-check icon-circle"
-                    style="color: white"
-                  ></i>
-                  Expertise: Our team lives and breathes SEO roofing strategies
-                  daily.
-                </p>
-              </li>
-              <li class="mb-3 c-ds">
-                <p>
-                  <i
-                    class="fa-solid fa-check icon-circle px-2"
-                    style="color: white"
-                  ></i>
-                  Local Dominance: We master Google’s map listings, so when
-                  homeowners search, they find you first.
-                </p>
-              </li>
-              <li class="mb-3 c-ds">
-                <p class="pb-4">
-                  <i
-                    class="fa-solid fa-check icon-circle"
-                    style="color: white"
-                  ></i>
-                  No Contracts: Real results keep our clients, not binding
-                  contracts.
-                </p>
-              </li>
-              <li class="mb-3 c-ds">
-                <p>
-                  <i
-                    class="fa-solid fa-check icon-circle"
-                    style="color: white"
-                  ></i>
-                  Monthly Reporting: Clear, understandable insights into how
-                  your roofing SEO campaign performs.
-                </p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-   
-    <section id="testimonials" class="testimonial">
-      <div class="container">
-        <div class="text-center">
-          <a href="#" class="btn btn-outline-get px-2 py-2">Testimonial</a>
-          <h2 class="mb-5">Roofing Contractors Trust SEO Roofer</h2>
-        </div>
-        <div class="row g-4">
-          <div class="col-md-4">
-            <div class="card bg-white text-dark p-3">
-              <i
-                class="fa-solid fa-quote-left icon-circles"
-                style="color: #85193c"
-              ></i>
-              <p>
-                We’ve worked with other marketing companies before, but no one
-                understands SEO for roofing contractors like SEORoofer. They
-                knew exactly how to position our business to show up on
-                Google—and fast. We’re getting more qualified leads every week,
-                and we’ve finally stopped wasting money on ads that don’t work.”
-              </p>
-              <strong>– Sarah M., Storm Shield Roofing <img src="./google-logo.png" alt="Struggling" class= "rounded float-end" style="height: 35px; width: 35px;" /></strong>
-              
-              <div class="star-rating text-warning mb-2">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card bg-white text-dark p-3 car-2">
-              <i
-                class="fa-solid fa-quote-left icon-circles"
-                style="color: #85193c"
-              ></i>
-              <p>
-                I was skeptical about SEO at first, but SEORoofer proved me
-                wrong. Within three months, we jumped from page 4 to page 1 in
-                our city. Calls increased, website traffic went up, and our
-                sales grew steadily. Their deep knowledge of SEO for roofers
-                made a huge difference.”
-              </p>
-              <strong>– Tony D., D’Angelo Roofing Company<img src="./google-logo.png" alt="Struggling" class= "rounded float-end" style="height: 35px; width: 35px;" /></strong>
-              <div class="star-rating text-warning mb-2">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card bg-white text-dark p-3 car-2">
-              <i
-                class="fa-solid fa-quote-left icon-circles"
-                style="color: #85193c"
-              ></i>
-              <p>
-                Before SEORoofer, we barely showed up in search results. Now,
-                we’re ranking #1 for key terms in our area. Their team really
-                understands the ins and outs of roofing SEOand they don’t use
-                cookie-cutter tactics. Everything was tailored to our market and
-                goals.”
-              </p>
-              <strong>– Rebecca F., Apex Roofing Solutions<img src="./google-logo.png" alt="Struggling" class= "rounded float-end" style="height: 35px; width: 35px;" /></strong>
-              <div class="star-rating text-warning mb-2">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  
-    <section id="contact" class="py-5 call-contct">
-      <div class="container text-center">
-        <h2>Ready to Grow Your <span class="highlight">Roofing Business?</span></h2>
-        <p class="section-title fw-semibold">
-          Let’s get started with a Free Roofing SEO Audit, no strings attached.
-          We’ll show you exactly<br> where your site stands and how to boost your
-          leads.
-        </p>
-        <div>
-          <a href="#" class="btn btn-primary m-2 px-2"
-            >Claim My Free SEO Audit Now<i class="fa-solid fa-arrow-right px-2"></i
-          ></a>
-          <a href="#" class="btn btn-outline-dark m-2"
-            ><i class="fa-solid fa-comment px-2" style="color: #85193c"></i>Contact
-            us</a
-          >
-        </div>
-      </div>
-    </section>
-
-    
-    <footer
-      class="text-white pt-5 pb-4"
-      style="background: linear-gradient(to bottom, #1f060e, #85193c)"
-    >
-      <div class="container text-md-left">
-        <div class="row text-md-left">
-        
-          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mt-3">
-            <a class="navbar-brand mb-4" href="#"
-              ><img
-                src="./logo-1.png"
-                alt="Hero Illustration"
-                class="illustrations"
-            /></a>
-            <p class="mt-3">Real Teams. Real Results.<br>
-               Zero Freelancer Headaches.</p>
-            <div>
-              <a href="#" class="text-white me-4"
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-              <a href="#" class="text-white me-4"
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
-               <a href="#" class="text-white me-4"
-                ><i class="fab fa-youtube"></i
-              ></a>
-              <a href="#" class="text-white me-4"
-                ><i class="fab fa-twitter"></i
-              ></a>
-            </div>
-          </div>
-
-          
-          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-            <h5 class="text-uppercase mb-4 font-weight-bold">Quick Links</h5>
-            <p><a href="#" class="text-white text-decoration-none">Home</a></p>
-            <p>
-              <a href="#services" class="text-white text-decoration-none"
-                >Services</a
-              >
-            </p>
-            <p>
-              <a href="#about-us" class="text-white text-decoration-none"
-                >About Us</a
-              >
-            </p>
-            <p>
-              <a href="#Why Seoroofer" class="text-white text-decoration-none"
-                >Why Seoroofer</a
-              >
-            </p>
-            <p>
-              <a href="#blog" class="text-white text-decoration-none">Blog</a>
-            </p>
-            <p>
-              <a href="#contact" class="text-white text-decoration-none"
-                >Contact US</a
-              >
-            </p>
-          </div>
-
-         
-          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-            <h5 class="text-uppercase mb-4 font-weight-bold">
-              Services for Roofers
-            </h5>
-            <p>Search Engine Optimization (SEO)</p>
-            <p>Pay-Per-Click (PPC)</p>
-            <p>Social Media Management</p>
-            <p>Website Design & Development</p>
-          </div>
-          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-            <h5 class="text-uppercase mb-4 font-weight-bold">Trust & Legal</h5>
-            <p>Privacy Policy</p>
-            <p>Terms of Service</p>
-            <p>Disclaimer</p>
-            <p>DMCA</p>
-          </div>
-        </div>
-
-       
-        <div class="row mt-4">
-          <div class="col-md-12 text-start fw-semibold">
-            <hr />
-            <p>&copy; 2025 Seoroofer. All Rights Reserved.</p>
-          </div>
-        </div>
-      </div>
-    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
